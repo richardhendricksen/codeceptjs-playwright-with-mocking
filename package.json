@@ -4,7 +4,8 @@
   "description": "CodeceptJS Playwright framework with mocking support",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx codeceptjs run --steps",
+    "test:ci": "npx codeceptjs run --steps --profile ci"
   },
   "author": "Richard Hendricksen",
   "license": "ISC",
