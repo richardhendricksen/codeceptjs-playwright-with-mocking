@@ -18,6 +18,7 @@ jobs:
           sudo apt-get update
           sudo apt-get -yqq install libnss3
           sudo apt-get -yqq install chromium-browser
+          ldd chrome | grep not
           npm ci
           npm run test:ci
 
