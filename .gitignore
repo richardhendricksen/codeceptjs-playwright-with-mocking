@@ -1,0 +1,14 @@
+### Node
+/node_modules
+
+### IDEs and editors
+/.idea
+*.iml
+.vscode/*
+
+### Test
+output
+allure-report
+
+### MacOS
+.DS_Store
