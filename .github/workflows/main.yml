@@ -16,9 +16,7 @@ jobs:
       - name: Run test
         run: |
           sudo apt-get update
-          sudo apt-get -yqq install libnss3
-          sudo apt-get -yqq install chromium-browser
-          ldd chromium | grep not
+          sudo apt-get -yqq install libwoff1 libopus0 libwebp6 libwebpdemux2 libenchant1c2a libgudev-1.0-0 libsecret-1-0 libhyphen0 libgdk-pixbuf2.0-0 libegl1 libnotify4 libxslt1.1 libevent-2.1-6 libgles2 libgl1 libvpx5 libnss3 libxss1 libasound2
           npm ci
           npm run test:ci
 
