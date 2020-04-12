@@ -1,4 +1,4 @@
-exports.config = {
+let config = {
     tests: 'specs/*.spec.ts',
     output: './output',
     helpers: {
@@ -27,3 +27,9 @@ exports.config = {
     },
     require: ["ts-node/register"]
 };
+
+if (process.profile === "ci") {
+    config.helpers.Playwright.show = false;
+}
+
+exports.config = config;
