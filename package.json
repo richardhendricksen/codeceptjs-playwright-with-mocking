@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "npx codeceptjs run --steps",
-    "test:ci": "npx codeceptjs run --steps --profile ci"
+    "test:ci": "npx codeceptjs run --steps --profile ci",
+    "lint": "npx tslint -p ."
   },
   "author": "Richard Hendricksen",
   "license": "ISC",
