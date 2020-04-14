@@ -22,8 +22,9 @@ export class TodoPage {
     static async getTitle(): Promise<string> {
         const texts: string | string[] = await I.grabTextFrom(this.selectors.title);
         if (texts instanceof Array) {
-            return texts[0]
+            return texts[0];
         }
+
         return texts;
     }
 
@@ -60,6 +61,6 @@ class TodoItem {
 
     async isCompleted(): Promise<boolean> {
         // Overriding typings, because method returns Promise<any> instead of Promise<string>
-        return (<any>await I.grabAttributeFrom(this.selectors.completed, 'checked')) === true;
+        return (<any> await I.grabAttributeFrom(this.selectors.completed, 'checked')) === true;
     }
 }

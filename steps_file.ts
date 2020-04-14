@@ -2,8 +2,9 @@
 
 import ILocator = CodeceptJS.ILocator;
 
-export = function() {
-    return actor( {
+// tslint:disable-next-line:only-arrow-functions
+export = function(): any {
+    return actor({
         // Define custom steps here, use 'this' to access default methods of I.
 
         canSee: async function(selector: ILocator): Promise<boolean> {
@@ -11,5 +12,5 @@ export = function() {
 
             return !(numVisible === 0);
         }
-    })
-}
+    });
+};

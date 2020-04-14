@@ -1,6 +1,7 @@
 import { expect } from 'chai';
-import { TodoPage } from '../pages/todo.page';
+
 import { Endpoints } from '../mocking/endpoints';
+import { TodoPage } from '../pages/todo.page';
 
 Feature('list todos');
 
