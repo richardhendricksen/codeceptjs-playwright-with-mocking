@@ -1,4 +1,9 @@
 {
+  "linterOptions": {
+    "exclude": [
+      "**/*.js"
+    ]
+  },
   "rules": {
     "align": [
       true,
