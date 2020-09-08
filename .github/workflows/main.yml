@@ -19,13 +19,13 @@ jobs:
           node-version: 12.x
 
       - name: Install packages
-        run: npm ci
+        run: yarn install --lockfile
 
       - name: Lint
-        run: npm run lint
+        run: yarn lint
 
       - name: Run test
-        run: npm run test:ci
+        run: yarn test:ci
 
 #      - name: Archive html report
 #        uses: actions/upload-artifact@v1
